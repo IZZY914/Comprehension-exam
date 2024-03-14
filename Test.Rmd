@@ -1,0 +1,75 @@
+---
+title: "Compehensionexam"
+output: html_document
+date: "2024-03-14"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r}
+Question 1
+Notes
+* set 0 of the data means hasn't smoked in the last 30 days
+* set 1 means smoked more than 1 day in the last 30 days
+```
+This data demostrates the participants age and two groups. group 0 are participants that have not smoked in the past 30 days and group 1 are participants that smoked more than one day. While i was analyzing the data i realized that there are more people who dont smoke compared to the ones who smoke more than 1 day. my alternative hypothesis is that the younger people tend to smoke more compared to older adults.My null hypothesis is age has no effect on the usuage of marijuana.  While i was calculating my data i noticed that there are ore participants that smoke at a younger age compared to older folks. As you can see in data 0 there are less adults that don't smoke compared to older adults. In data 1 there are more younger adults that smoke compared to older adults. Below is my calculations. I concluded that my statistics is significant therefore i have to reject the null hypothesis and accept the alternatuve. 
+
+```{r}
+calculations for standard error
+ 0 (3737/6224.69)^2 + (3117/6224.69)^2 + (3675/6224.69)^2 + (4530/6224.69)^2 + (5069/6224.69)^2 + (4949/6224.69)^2 + (6273/6224.69)^2 + (6960/6224.69)^2 + (8520/6224.69)^2 + (/6224.69)^2 +(9699/6224.69)^2 + (9275/6224.69)^2 + (7154/6224.69)^2 + (7963/6224.69)^2 /13 = 616.31
+```
+```{r}
+Calculation for T stat
+6224.69-881.31/ 2222.13^2/13+ 335.18^2/13= 8.5730
+```{r}
+Calculation for Confidence Interval 
+Sample 1: 0
+n= 13 x= 6224.69 standard deviation= 2222.13
+Sample 2: 1
+n= 13 x= 881.31 standard deviation= 335.18
+ci= (6224.69-881.31) plus minus 8.5730 * 2222.13^2/13+ 335.18^2/13= (4057.0, 6629.77)
+```{r}
+calculation of P value 
+ Degree of freedom=  24
+ T Stat= 8.5730
+ significance level= 0.05
+ p value= 0 
+ Concludes that my statistic is statistically significant therefore reject the null hypothesis and accept the alternative 
+```
+Question 2
+The second data demostrates educational levels and marijuana usage. Daa was collected from two samples. sample 0 is participants who have not smoked marijuana the past 30 days and sample 1 is participants who have smoked than 1 day in the last 30 days. Without calcuating anything, i automatically noticed that there are more participants who have not smoked in the last 30 days who attended school. My null hypothesis is that marijuana has no effect in educational levels. My alternative hypothesis is that marjuana has an impact in educational levels. I concluded that no hypothesis is not statistically significant due to my p value. Evidence that can help is removing the participants that refused to answer. 
+```
+```{r}
+Calcuation for T stat
+11744.29- 1646.43/ 14058^2/7 + 1850.88^2/7 = 1.8841
+```
+
+```{r}
+Calcuation of Confidence Interval
+(14058.33- 1850) plus minus 1.8841/ 14058^2/7 + 1850.88^2/7 = (-1579.28, 21774.99)
+```
+```{r}
+Calcuation for Standard error 
+data 0  (95       1472    2642 20004     22747   34993     257) divide each one by 11744.29 and divide as a whole by 7 the divide all of  data 1  (8        104     587  3297      3555    3958      16) by 1646.43 standard error of difference is 5359. 404
+
+``
+```{r}
+Calculation for p value
+degree of freedom= 12
+t score= 1.8841
+p value is 0.084
+not statistically significant because there is not enough evidence to support hypothesis
+```
+Question 3 and 4
+```{r}
+load("~/Documents/izzy work/BRFSS2022_rev.RData")
+```
+```{r}
+library(ggplot2)
+library(tidyverse)
+
+```
+
+```
+
